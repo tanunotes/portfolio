@@ -4,27 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href=".css" />
 </head>
 <body>
-
   <!-- Top Navbar -->
   <header class="navbar">
     <div class="logo">KOYA TANUJA</div>
-    <nav class="nav-links">
-      <a href="#home">Home</a>
-      <a href="#education">Education</a>
-      <a href="#skills">Skills</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
+    <div class="menu-toggle" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="nav-links" id="navLinks">
+      <a href="#home" onclick="closeMenu()">Home</a>
+      <a href="#education" onclick="closeMenu()">Education</a>
+      <a href="#skills" onclick="closeMenu()">Skills</a>
+      <a href="#certifications" onclick="closeMenu()">Certifications</a>
+      <a href="#contact" onclick="closeMenu()">Contact</a>
     </nav>
   </header>
 
   <!-- Layout: Left fixed image and right scrollable content -->
   <div class="main-content">
     <div class="left-image">
-      <img src="images/port.png" alt="Profile Image">
+      <img src="./images/port.png" alt="Profile Image">
     </div>
 
     <div class="right-content">
@@ -37,47 +40,52 @@
         <div class="sub-header">Portfolio</div>
         <div class="description">
           Hi, I'm Tanuja Koya, a 2nd-year CSE student at RVR & JC College of Engineering.
-          <br>Welcome to my portfolio!
+          <br>Welcome to my portfolio! I'm passionate about technology, programming, and creating innovative solutions.
         </div>
         <div class="buttons">
-          <button class="btn explore">Explore Now</button>
+          <button class="btn explore" onclick="document.getElementById('education').scrollIntoView({behavior: 'smooth'})">
+            Explore Now
+          </button>
         </div>
       </section>
 
       <!-- EDUCATION SECTION -->
       <section id="education">
-        <h1 style="border-bottom: 1px solid white;">Education</h1>
+        <h1>Education</h1>
         <div class="section edu-flex">
           <div>
             <h2>B.Tech in CSE</h2>
             <p>RVR & JC College of Engineering</p>
             <p>Years: 2023 - 2027</p>
+            <p>Pursuing comprehensive education in Computer Science with focus on emerging technologies.</p>
           </div>
           <div class="rvr">
-            <img src="images/rvrlogo.jpg" alt="RVR Logo">
+            <img src="./images/rvrlogo.jpg" alt="RVR Logo">
           </div>
         </div>
         <div class="section">
           <h2>Intermediate</h2>
           <p>RGUKT, Nuzvid</p>
           <p>Years: 2021 - 2023</p>
+          <p>Completed intermediate education with strong foundation in mathematics and sciences.</p>
         </div>
         <div class="section">
           <h2>Schooling</h2>
           <p>P.M.C High School, Guntur</p>
           <p>Completed in 2021</p>
+          <p>Built fundamental academic skills and discovered passion for technology.</p>
         </div>
-        <div class="footer" style="text-align: center;">Passionate about learning and growing through technology.</div>
+        <div class="footer">Passionate about learning and growing through technology.</div>
       </section>
 
       <!-- SKILLS -->
       <section id="skills">
         <h1>Skills</h1>
         <div class="skills">
-          <img src="images/frontend.png" alt="Frontend Logo">
-          <img src="images/c.png" alt="C Programming">
-          <img src="images/cplus.webp" alt="C++">
-          <img src="images/python.png" alt="Python">
+          <img src="./images/frontend.png" alt="frontend" title="frontend">
+          <img src="./images/c.png" alt="C Programming" title="C Programming">
+          <img src="./images/cplus.webp" alt="C++" title="C++">
+          <img src="./images/python.png" alt="Python" title="Python">
         </div>
       </section>
 
@@ -87,22 +95,22 @@
         <div class="certifications">
           <div class="cert-item">
             <div class="cert-title">Google Android Developer (EduSkills)</div>
-            <a href="images/cert1.jpg" target="_blank" class="view-cert-btn" rel="noopener">View Certificate</a>
+            <a href="./images/cert1.jpg" class="view-cert-btn" target="_blank" rel="noopener">View Certificate</a>
           </div>
           <div class="cert-item">
             <div class="cert-title">Google AI-ML (EduSkills)</div>
-            <a href="images/cert3.jpg" target="_blank" class="view-cert-btn" rel="noopener">View Certificate</a>
+            <a href="./images/cert3.jpg" class="view-cert-btn" target="_blank" rel="noopener">View Certificate</a>
           </div>
           <div class="cert-item">
             <div class="cert-title">Python for Data Science (Infosys)</div>
-            <a href="images/cert2.jpg" target="_blank" class="view-cert-btn" rel="noopener">View Certificate</a>
+            <a href="./images/cert2.jpg" class="view-cert-btn" target="_blank" rel="noopener">View Certificate</a>
           </div>
         </div>
       </section>
 
       <!-- CONTACT -->
       <section id="contact">
-        <h1 style="color:white">Contact Details</h1>
+        <h1>Contact Details</h1>
         <div class="contact">
           <a href="https://linkedin.com/in/tanujakoya" class="icon-link" target="_blank" rel="noopener">
             <i class="fa-brands fa-linkedin"></i>
@@ -110,11 +118,11 @@
           <a href="https://mail.google.com/mail/?view=cm&fs=1&to=srijakorabandi4@gmail.com" class="icon-link" target="_blank" rel="noopener">
             <i class="fa-solid fa-envelope"></i>
           </a>
+          <a href="https://github.com" class="icon-link" target="_blank" rel="noopener">
+            <i class="fa-brands fa-github"></i>
+          </a>
         </div>
         <p class="footer">Feel free to reach out for collaborations, questions, or just a friendly hello!</p>
       </section>
     </div>
   </div>
-
-</body>
-</html>
