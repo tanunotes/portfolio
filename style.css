@@ -1,0 +1,272 @@
+/* Apply margin:0 and padding:0 for all tags */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Style for navigation bar */
+.navbar {
+  background-color: #1f1f1f;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+/* Style for logo text */
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: cyan;
+}
+
+/* Style for navigation links */
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 25px;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.nav-links a:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Display left and right side by side */
+.main-content {
+  display: flex;
+}
+
+/* Left side image section */
+.left-image {
+  width: 30%;
+  height: calc(100vh - 60px);
+  position: sticky;
+  top: 60px;
+}
+
+.left-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Right side content section */
+.right-content {
+  width: 70%;
+  padding: 50px;
+  overflow-y: auto;
+}
+
+/* Each section styling */
+section {
+  scroll-margin-top: 130px;
+  padding: 100px 0;
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+/* First page headings */
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header h1 {
+  font-size: 90px;
+}
+
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: white;
+}
+
+.sub-header {
+  font-size: 90px;
+  font-weight: bold;
+  margin: 20px 0 30px;
+}
+
+/* Paragraph styling */
+.description {
+  color: #ccc;
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+/* Button container */
+.buttons {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+/* Explore button */
+.btn {
+  padding: 10px 20px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+/* Styling the explore button */
+.explore {
+  background-color: #0077b5;
+  color: white;
+}
+
+/* Education and other section headers */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+/* Common section styling */
+.section {
+  margin: 30px 0;
+}
+
+.section p {
+  color: #ccc;
+  margin: 10px 0;
+}
+
+/* Education specific: college name and logo side by side */
+.edu-flex {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+/* Style for rvr image */
+.rvr img {
+  width: 120px;
+  border-radius: 8px;
+  border: 3px solid burlywood;
+  box-shadow: 0 4px 15px rgba(149, 195, 195, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.rvr img:hover {
+  transform: scale(1.05);
+}
+
+/* Skill section */
+.skills {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 12px;
+  border: 3px solid white;
+  box-shadow: 0 4px 15px cyan;
+  transition: transform 0.3s ease;
+}
+
+.skills img:hover {
+  transform: scale(1.05);
+}
+
+/* Certification section styling */
+.certifications {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-width: 500px;
+  margin-bottom: 30px;
+}
+
+.cert-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-title {
+  font-size: 1.2rem;
+  color: whitesmoke;
+}
+
+.view-cert-btn {
+  padding: 6px 12px;
+  background-color: #0077b5;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.3s ease;
+}
+
+.view-cert-btn:hover {
+  background-color: #005582;
+  transform: scale(1.08);
+}
+
+/* Contact section styling */
+#contact {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+#contact h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: cyan;
+}
+
+/* Contact icons row */
+.contact {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+/* Icon style */
+.icon-link i {
+  font-size: 45px;
+  color: cyan;
+  transition: 0.3s ease;
+}
+
+.icon-link i:hover {
+  transform: scale(1.2);
+  color: #00ffff;
+}
+
+/* Footer note */
+.footer {
+  font-style: italic;
+  color: #ccc;
+  margin-top: 20px;
+}
+
+/* Set default font and background */
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
