@@ -387,17 +387,15 @@ section {
   }
   .left-image {
     height: 40vh;
-  }
-  .navbar {
-    padding: 15px 20px;
-  }
-
-  .left-image {
-    padding-top: 350px;
+    padding-top: 350px; /* keep as-is */
   }
 
   .right-content {
     margin-top: 200px;
+  }
+
+  .navbar {
+    padding: 15px 20px;
   }
 }
 
@@ -414,38 +412,51 @@ section {
     margin-top: 200px;
   }
 
+  /* UPDATED: Compact dropdown menu (not full screen) */
   .nav-links {
-    position: fixed;
-    top: 80px;
-    right: -100%;
-    width: 100%;
-    height: calc(100vh - 80px);
+    position: absolute;
+    top: 80px; /* Just below navbar */
+    right: 20px;
+    background-color: #1f1f1f;
     flex-direction: column;
-    background: rgba(31, 31, 31, 0.95);
-    justify-content: center;
-    align-items: center;
-    transition: 0.3s;
+    align-items: flex-start;
+    padding: 10px 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    display: none; /* Hidden by default */
+    z-index: 999;
   }
+
   .nav-links.active {
-    right: 0;
+    display: flex; /* Show on toggle */
   }
+
   .nav-links a {
-    font-size: 24px;
-    margin: 20px 0;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+    font-size: 16px;
+    margin: 2px 0; /* Minimal vertical space */
+    padding: 4px 8px; /* Tight padding */
+    line-height: 1.2;
   }
+
   .edu-flex {
     flex-direction: column;
     text-align: center;
   }
+
   .skills {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
   }
+
   .cert-item {
     flex-direction: column;
     text-align: center;
     gap: 15px;
   }
+
   .contact {
     gap: 30px;
   }
@@ -455,14 +466,17 @@ section {
   .skills {
     grid-template-columns: 1fr;
   }
+
   .header {
     flex-direction: column;
     text-align: center;
     gap: 20px;
   }
+
   .line {
     width: 100px;
   }
+
   .contact {
     flex-direction: row;
     gap: 20px;
