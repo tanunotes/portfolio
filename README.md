@@ -56,25 +56,36 @@ This portfolio project is applicable in:
 
 ##  Live Demo
 
-🔗 [View Portfolio](https://your-deployed-link.com)  
-(Replace this with your actual GitHub Pages or hosting link)
+🔗 https://tanunotes.github.io/portfolio/
 
 ---
 
 ## Project Structure
 portfolio/
 ├── index.html
+
 ├── style.css
+
 ├── script.js
+
 ├── images/
+
 │ ├── port.png
+
 │ ├── rvrlogo.jpg
+
 │ ├── cert1.jpg
+
 │ ├── cert2.jpg
+
 │ ├── cert3.jpg
+
 │ ├── c.png
+
 │ ├── cplus.webp
+
 │ ├── python.png
+
 │ └── frontend.png
 
 
@@ -91,7 +102,7 @@ portfolio/
 -  Integrated social media and contact icons
 
 ---
-
+## 
 
 
 
