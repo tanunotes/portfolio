@@ -102,7 +102,8 @@ portfolio/
 -  Integrated social media and contact icons
 
 ---
-## 
+## OUTPUT
+![Image](https://github.com/user-attachments/assets/88ab4cae-190c-4932-866b-609f4cd7254b)
 
 
 
